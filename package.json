@@ -1,0 +1,22 @@
+{
+  "name": "book-summary-website",
+  "version": "1.0.0",
+  "description": "A single-page website for getting book summaries using GPT-3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HomameSoussi/Studies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HomameSoussi/Studies/issues"
+  },
+  "homepage": "https://github.com/HomameSoussi/Studies#readme",
+  "dependencies": {
+    "openai": "^0.27.0"
+  }
+}
