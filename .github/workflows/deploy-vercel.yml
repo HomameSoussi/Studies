@@ -1,12 +1,10 @@
-name: Deploy to Vercel
+name: Generate Package Lock
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  generate-package-lock:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +16,11 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Deploy to Vercel
-      run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --orgId ${{ secrets.VERCEL_ORG_ID }} --prod
+    - name: Generate package-lock.json
+      run: |
+        npm install
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add package-lock.json
+        git commit -m "Add package-lock.json"
+        git push
