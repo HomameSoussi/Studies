@@ -11,7 +11,7 @@ document.getElementById("summary-form").addEventListener("submit", async (event)
 });
 
 async function getSummary(bookName) {
-    const response = await fetch("path/to/your/serverless/function", {
+    const response = await fetch("https://studies-three.vercel.app/", {
         method: "POST",
         body: JSON.stringify({ bookName }),
         headers: {
