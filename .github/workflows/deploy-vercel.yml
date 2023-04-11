@@ -22,4 +22,5 @@ jobs:
       run: |
         npm i -g vercel
         echo "VERCEL_TOKEN=${{ secrets.VERCEL_TOKEN }}" > .env
+        echo "OPENAI_API_KEY=${{ secrets.openai_api_key }}" >> .env
         vercel --token="${{ secrets.VERCEL_TOKEN }}" --prod --yes
