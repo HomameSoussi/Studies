@@ -1,6 +1,6 @@
 {
   "env": {
-    "OPENAI_API_KEY": "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",
-    "OPENAI_ORGANIZATION": "org-asBhL8oQzqAfcvtMhYwbxGXB"
+    "OPENAI_API_KEY": "@openai_api_key",
+    "OPENAI_ORGANIZATION": "@openai_organization"
   }
 }
