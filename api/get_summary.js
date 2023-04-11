@@ -1,6 +1,6 @@
 const openai = require("openai");
 
-openai.apiKey = process.env.OPENAI_API_KEY;
+openai.apiKey = process.env.openai_api_key;
 openai.organization = process.env.OPENAI_ORGANIZATION;
 
 module.exports = async (req, res) => {
